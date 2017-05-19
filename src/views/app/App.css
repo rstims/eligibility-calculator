@@ -1,0 +1,61 @@
+body{
+	background:rgba(40,93,133,0.93);
+}
+
+.App {
+  text-align: center;
+}
+
+.App header{
+	background:white;
+	display:inline-block;
+	padding:20px;
+	position:relative;
+	width:140px;
+}
+
+.App header:after{
+	content:"";
+	width: 0; 
+	height: 0; 
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-top: 38px solid white;
+	position:absolute;
+	bottom:-38px;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+}
+
+.App header img{
+	width:100%;
+}
+
+@media(min-width:768px){
+	.App header{
+		padding:25px;
+		width:240px;
+	}
+	.App header:after{
+		border-left-width:120px;
+		border-right-width: 120px;
+		border-top-width: 65px;
+		bottom:-65px;
+	}
+}
+
+@media(max-height:780px) and (min-width:768px){
+	.App header{
+		padding:17px;
+		width:170px;
+	}
+	.App header:after{
+		border-left-width:85px;
+		border-right-width: 85px;
+		border-top-width: 46px;
+		bottom:-46px;
+	}
+}
+
